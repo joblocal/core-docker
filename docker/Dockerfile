@@ -1,5 +1,6 @@
 FROM ubuntu:16.04
-MAINTAINER joblocal GmbH "produktentwicklung@joblocal.de"
+
+LABEL maintainer="joblocal GmbH <produktentwicklung@joblocal.de>"
 
 RUN ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime && echo "Europe/Berlin" > /etc/timezone \
   && apt-get update \

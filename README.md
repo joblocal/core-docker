@@ -10,4 +10,4 @@ The image is used as base image for our core application .
 
 ## Images
 
-Find all versions at the repositories [Docker Hub](https://hub.docker.com/r/joblocal/core-docker/)
+Find all versions at the repositories [Docker Hub](https://hub.docker.com/r/joblocal/core/)
