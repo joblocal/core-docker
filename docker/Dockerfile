@@ -2,6 +2,11 @@ FROM ubuntu:16.04
 
 LABEL maintainer="joblocal GmbH <produktentwicklung@joblocal.de>"
 
+ENV PHP_OPCACHE_VALIDATE_TIMESTAMPS="0" \
+    PHP_OPCACHE_MAX_ACCELERATED_FILES="50000" \
+    PHP_OPCACHE_MEMORY_CONSUMPTION="192" \
+    PHP_OPCACHE_MAX_WASTED_PERCENTAGE="10"
+
 RUN ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime && echo "Europe/Berlin" > /etc/timezone \
   && apt-get update \
   && apt-get -y --no-install-recommends install \
